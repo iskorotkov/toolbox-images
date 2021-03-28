@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-toolbox:34 AS base
+FROM iskorotkov/toolbox-base:v1.0.0 AS base
 
 # Install Node.js
 RUN dnf install -y nodejs
