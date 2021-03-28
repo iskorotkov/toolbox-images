@@ -6,3 +6,6 @@ RUN dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.rep
 
 # Install make
 RUN dnf install -y make
+
+# Install Git LFS
+RUN dnf install -y git-lfs
