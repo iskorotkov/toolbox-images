@@ -1,4 +1,4 @@
-FROM iskorotkov/toolbox-base:v1.0.0 as base
+FROM iskorotkov/toolbox-base:v1.0.0 AS base
 
 # Install Podman
 RUN dnf install -y podman
