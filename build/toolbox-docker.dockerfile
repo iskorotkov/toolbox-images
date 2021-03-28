@@ -8,6 +8,4 @@ RUN cd /usr/bin \
     && ln -s podman docker
 
 # Install hadolint
-FROM hadolint/hadolint:latest-alpine as hadolint
-FROM base
-COPY --from=hadolint /bin/hadolint /bin/hadolint
+RUN dnf install -y hadolint
